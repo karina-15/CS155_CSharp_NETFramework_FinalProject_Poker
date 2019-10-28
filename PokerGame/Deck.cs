@@ -8,5 +8,7 @@ namespace PokerGame
 {
     class Deck
     {
+        private const int DECK_SIZE = 52;
+        private const int HAND = 5;
     }
 }
