@@ -10,6 +10,9 @@ namespace PokerGame
     {
         static void Main(string[] args)
         {
+            Card c1 = new Card(Suit.Diamond, Rank.Three);
+            Console.WriteLine(c1.ToString());
+            Console.ReadKey();
         }
     }
 }

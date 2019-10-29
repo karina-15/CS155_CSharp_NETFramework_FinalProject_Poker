@@ -31,7 +31,6 @@ namespace PokerGame
         Ace
     }
 
-
     class Card
     {
         public Suit Suit { get; private set; }
@@ -43,6 +42,11 @@ namespace PokerGame
             this.Suit = suit;
             this.Rank = rank;
         }
-        
+        public override string ToString()
+        {
+            string cardRank = ((Rank)2).ToString();
+            string cardSuit = ((Suit)1).ToString();
+            return String.Format("{0} of {1}", cardRank, cardSuit);
+        }
     }
 }
