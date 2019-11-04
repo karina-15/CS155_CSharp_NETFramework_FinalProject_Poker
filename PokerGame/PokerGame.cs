@@ -10,9 +10,10 @@ namespace PokerGame
     {
         static void Main(string[] args)
         {
-            Card c1 = new Card(Suit.Diamond, Rank.Three);
-            Console.WriteLine(c1.ToString());
-            Console.ReadKey();
+            Deck deck = new Deck();
+            Console.Write(deck.GetDeck());
+
+            Console.ReadKey();  // prevents window from closing
         }
     }
 }
