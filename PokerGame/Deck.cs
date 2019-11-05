@@ -39,7 +39,7 @@ namespace PokerGame
             }
         }
 
-        private static Card[] GetDeck()
+        public Card[] GetDeck()
         {
             Card[] temp = new Card[DECK_SIZE];
             int index = 0;

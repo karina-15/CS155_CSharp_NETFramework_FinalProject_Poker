@@ -11,7 +11,18 @@ namespace PokerGame
         static void Main(string[] args)
         {
             Deck deck = new Deck();
-            Console.Write(deck.GetDeck());
+            foreach(Card card in deck.GetDeck())
+            {
+                Console.WriteLine(card);
+            }
+
+            Hand hand = new Hand();
+/*
+            foreach(Hand card1 in hand)
+            {
+                Console.WriteLine(card1);
+            }
+*/
 
             Console.ReadKey();  // prevents window from closing
         }
