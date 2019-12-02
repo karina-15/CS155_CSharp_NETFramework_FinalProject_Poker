@@ -82,7 +82,6 @@ namespace PokerGame
             Console.WriteLine("Player's Hand");
             for(int i = 0; i < 5; i++)
             {
-                DrawCards.DrawCardOutline(x, y);
                 DrawCards.DrawCardSuitRank(sortedPlayerHand[i], x, y);
                 x++;
             }
@@ -93,7 +92,6 @@ namespace PokerGame
             Console.WriteLine("CPU's Hand");
             for(int i = 5; i < 10; i++)
             {
-                DrawCards.DrawCardOutline(x, y);
                 DrawCards.DrawCardSuitRank(sortedCpuHand[i - 5], x, y);
                 x++;
             }
