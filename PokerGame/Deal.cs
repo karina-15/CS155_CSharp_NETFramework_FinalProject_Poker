@@ -85,9 +85,9 @@ namespace PokerGame
                 DrawCards.DrawCardSuitRank(sortedPlayerHand[i], x, y);
                 x++;
             }
-            y = 15;
+            y = 10;
             x = 0;
-            Console.SetCursorPosition(x, 14);
+            Console.SetCursorPosition(x, 8);
             Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine("CPU's Hand");
             for(int i = 5; i < 10; i++)
@@ -99,14 +99,16 @@ namespace PokerGame
 
         public void EvaluateHands()
         {
+            Console.ForegroundColor = ConsoleColor.White;
+
             HandEvaluator playerHandEval = new HandEvaluator(sortedPlayerHand);
             HandEvaluator cpuHandEval = new HandEvaluator(sortedCpuHand);
 
             Hand playerHand = playerHandEval.EvaluateHand();
             Hand cpuHand = cpuHandEval.EvaluateHand();
 
-            Console.WriteLine("\n\n\n\n\nPlayer's Hand: " + playerHand);
-            Console.WriteLine("\nCPU's Hand: " + cpuHand);
+            Console.WriteLine("\n\nPlayer's Hand: " + playerHand);
+            Console.WriteLine("CPU's Hand: " + cpuHand);
 
             if(playerHand > cpuHand)
             {
@@ -139,6 +141,8 @@ namespace PokerGame
                     Console.WriteLine("Draw!");
                 }
             }
+
+            Console.WriteLine();
         }
     }
 }

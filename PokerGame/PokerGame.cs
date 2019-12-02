@@ -10,10 +10,6 @@ namespace PokerGame
     {
         static void Main(string[] args)
         {
-            Console.SetWindowSize(65, 40);
-            // removes scroll bars
-            Console.BufferWidth = 65;
-            Console.BufferHeight = 40;
             Console.Title = "Poker Game";
             Deal deal = new Deal();
             bool quit = false;
