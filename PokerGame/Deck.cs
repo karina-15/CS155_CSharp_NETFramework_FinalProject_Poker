@@ -32,7 +32,6 @@ namespace PokerGame
                     i++;
                 }
             }
-
             ShuffleCards();
         } // END OF SetDeck method
 

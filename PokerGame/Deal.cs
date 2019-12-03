@@ -88,7 +88,7 @@ namespace PokerGame
             y = 10;
             x = 0;
             Console.SetCursorPosition(x, 8);
-            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine("CPU's Hand");
             for(int i = 5; i < 10; i++)
             {
