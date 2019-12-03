@@ -11,7 +11,7 @@ namespace PokerGame
         public static void DrawCardSuitRank(Card card, int xcoord, int ycoord)
         {
             char cardSuit = ' ';
-            Console.OutputEncoding = Encoding.UTF8;
+            Console.OutputEncoding = Encoding.Unicode;
 
             switch(card.Suit)
             {
