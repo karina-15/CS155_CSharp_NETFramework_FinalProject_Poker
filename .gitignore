@@ -5,4 +5,5 @@
 /.vs
 /PokerGame/.vs/PokerGame/v16
 /PokerGame/obj
-/PokerGUI
+
+PokerGUI/**
